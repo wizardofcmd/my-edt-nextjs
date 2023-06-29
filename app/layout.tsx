@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="h-screen w-screen bg-emerald-400">{children}</body>
+        <body>{children}</body>
       </html>
     </ClerkProvider>
   );
