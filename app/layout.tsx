@@ -1,5 +1,8 @@
 import "./globals.css";
+import { Inter_Tight } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+
+const interTight = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata = {
   title: "My EDT Portal",
@@ -14,7 +17,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body className={interTight.className}>{children}</body>
       </html>
     </ClerkProvider>
   );
