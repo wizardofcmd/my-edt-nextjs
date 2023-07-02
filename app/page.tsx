@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SignUpModal from "./components/SignUpModal";
 
 export default function Home() {
