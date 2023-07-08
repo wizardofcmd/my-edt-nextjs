@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar";
+
 export default function Dashboard() {
-  return <h1 className="text-3xl text-white">Dashboard</h1>;
+  return <Navbar />;
 }

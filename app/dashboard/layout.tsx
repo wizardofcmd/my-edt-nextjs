@@ -4,7 +4,7 @@ export default function DashboardLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="h-screen w-screen p-1 bg-teal-500">
+    <main className="h-screen w-screen bg-slate-800">
       {children}
     </main>
   )
