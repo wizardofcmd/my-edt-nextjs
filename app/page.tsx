@@ -1,4 +1,4 @@
-import SignUpModal from "./components/SignUpModal";
+import SignUpModal from "./components/Landing";
 
 export default function Home() {
   return (
