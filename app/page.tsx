@@ -21,7 +21,7 @@ export default function Home() {
             <SignUpButton redirectUrl="/dashboard">
               <button
                 type="button"
-                className="text-md flex h-full w-full items-center justify-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:h-full md:w-4/5"
+                className="text-md flex h-full w-full items-center justify-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:h-full md:min-h-[64px] md:w-4/5"
               >
                 Sign Up
               </button>
@@ -29,7 +29,7 @@ export default function Home() {
             <SignInButton redirectUrl="/dashboard">
               <button
                 type="button"
-                className="text-md flex h-full w-full items-center justify-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:h-full md:w-4/5"
+                className="text-md flex h-full w-full items-center justify-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:h-full md:min-h-[64px] md:w-4/5"
               >
                 Login
               </button>
