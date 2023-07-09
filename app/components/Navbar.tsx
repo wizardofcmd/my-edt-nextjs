@@ -1,11 +1,13 @@
 import Image from "next/image";
 import RSALogo from "/public/rsa-logo.png";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Navbar() {
   return (
     <header className="flex h-16 bg-slate-900">
-      <div className="hidden w-full items-center px-4 sm:flex sm:px-8 md:px-12 lg:px-16">
+      {/* Navbar for bigger screens */}
+      <div className="hidden w-full items-center px-4 sm:flex sm:pl-8 md:pl-12 lg:pl-16">
         <Link href="/dashboard" className="flex h-5/6 w-auto items-center">
           <Image
             className="h-full w-auto"
@@ -25,8 +27,12 @@ export default function Navbar() {
             Find an Instructor
           </Link>
         </div>
+        <div className="ml-auto flex sm:pl-8">
+          <UserButton />
+        </div>
       </div>
 
+      {/* Mobile menu icon */}
       <div className="flex items-center px-4 sm:hidden">
         <button
           type="button"
