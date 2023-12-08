@@ -20,14 +20,6 @@ export default function Home() {
             </h1>
           </div>
           <div className="flex h-1/6 w-9/12 flex-col justify-center gap-4 sm:h-[8%] sm:flex-row">
-            <SignUpButton redirectUrl="/dashboard">
-              <button
-                type="button"
-                className="text-md flex h-full min-h-[3.5rem] w-full items-center justify-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-1.5 text-xl font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:h-full md:w-4/5"
-              >
-                Sign Up
-              </button>
-            </SignUpButton>
             <SignInButton redirectUrl="/dashboard">
               <button
                 type="button"
@@ -36,6 +28,14 @@ export default function Home() {
                 Login
               </button>
             </SignInButton>
+            <SignUpButton redirectUrl="/dashboard">
+              <button
+                type="button"
+                className="text-md flex h-full min-h-[3.5rem] w-full items-center justify-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-1.5 text-xl font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:h-full md:w-4/5"
+              >
+                Sign Up
+              </button>
+            </SignUpButton>
           </div>
         </div>
       </div>
