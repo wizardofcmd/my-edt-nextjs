@@ -1,10 +1,18 @@
+"use client";
+
+import { useUser } from "@clerk/nextjs";
 import React from "react";
-import Navbar from "../components/Navbar";
 
 export default function Dashboard() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  const { isSignedIn, user } = useUser();
+
+  if (isSignedIn) {
+    return (
+      <h1 className="text-4xl font-bold text-white">
+        {`Welcome, ${user.fullName}.`}
+      </h1>
+    );
+  }
+
+  return null;
 }
