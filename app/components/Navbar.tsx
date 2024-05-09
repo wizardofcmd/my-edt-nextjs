@@ -4,6 +4,7 @@ import Image from "next/image";
 import RSALogo from "/public/rsa-logo.png";
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 import { useState } from "react";
 import BurgerIcon from "./BurgerIcon";
 
@@ -13,26 +14,42 @@ export default function Navbar() {
   const toggleBurgerMenu = () => setIsBurgerMenuOpen(!isBurgerMenuOpen);
   const NavbarLinks = () => (
     <>
-      <div className="ml-16 flex items-center gap-16">
-        <Link href="/dashboard" className="text-lg font-medium text-white">
+      <div className="flex flex-col gap-4 pl-3 md:ml-16 md:flex-row md:items-center md:gap-16">
+        <Link
+          href="/dashboard"
+          className="text-2xl font-medium text-white md:text-lg"
+        >
           Dashboard
         </Link>
-        <Link href="#" className="text-lg font-medium text-white">
+        <Link href="#" className="text-2xl font-medium text-white md:text-lg">
           My Licenses
         </Link>
-        <Link href="#" className="text-lg font-medium text-white">
+        <Link href="#" className="text-2xl font-medium text-white md:text-lg">
           Find an Instructor
         </Link>
       </div>
-      <div className="ml-auto flex sm:pl-8">
-        <UserButton />
+      <div className="flex py-4 pl-3 md:ml-auto md:pl-8">
+        <UserButton
+          appearance={{
+            elements: {
+              userButtonBox: {
+                flexDirection: "row-reverse",
+              },
+            },
+            variables: {
+              fontSize: "1.5rem",
+            },
+            baseTheme: dark,
+          }}
+          showName={isBurgerMenuOpen ? true : false}
+        />
       </div>
     </>
   );
 
   return (
     <header
-      className={`flex min-h-max w-full bg-slate-900 md:min-h-[auto] ${
+      className={`flex min-h-max w-full bg-slate-900 ${
         isBurgerMenuOpen ? "flex-col" : ""
       }`}
     >
@@ -59,7 +76,7 @@ export default function Navbar() {
       </div>
 
       {isBurgerMenuOpen && (
-        <div>
+        <div className="flex flex-col">
           <NavbarLinks />
         </div>
       )}
