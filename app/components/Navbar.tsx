@@ -19,7 +19,7 @@ export default function Navbar() {
           href="/dashboard"
           className="text-2xl font-medium text-white md:text-lg"
         >
-          Dashboard
+          My Lessons
         </Link>
         <Link href="#" className="text-2xl font-medium text-white md:text-lg">
           My Licenses
@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`flex min-h-max w-full bg-slate-900 ${
+      className={`flex h-[1/8] w-full bg-slate-900 ${
         isBurgerMenuOpen ? "flex-col" : ""
       }`}
     >
