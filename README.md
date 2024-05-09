@@ -1,22 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MY EDT Next.js
+Next.js App Router application for learner drivers and ADIs to view/submit EDT lessons completed.
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![rsa-logo](https://github.com/wizardofcmd/my-edt-nextjs/assets/70809221/a9d8290e-b47b-48c7-8359-c57195a0f916)
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Deployment
+https://my-edt-nextjs.vercel.app/
+
+## Installation
+Make sure you have [Node.js](https://nodejs.org/en/download) installed on your machine.
+
+Open a new terminal session and clone the repository. Navigate into the root directory and run the command:
+
+```
+npm install
+```
+
+## Usage
+```
+npm run dev
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Learn More
 
@@ -24,11 +31,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
