@@ -4,7 +4,7 @@ import { SignInButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <main className="flex h-screen min-h-screen w-screen items-center justify-center py-8">
+    <main className="flex h-screen min-h-screen w-screen items-center justify-center py-8 sm:bg-slate-400 md:overflow-scroll">
       <div className="flex h-full w-full items-center justify-center justify-items-center sm:h-2/3 sm:w-2/3">
         <div className="flex min-h-full w-full flex-col items-center justify-center p-6 sm:rounded-lg sm:bg-white">
           <div className="flex h-full flex-col justify-end gap-4 pb-4 sm:items-center sm:justify-center">
