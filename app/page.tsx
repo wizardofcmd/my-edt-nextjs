@@ -12,7 +12,7 @@ export default function Home() {
               src="/rsa-logo.png"
               width={100}
               height={100}
-              alt="RSA logo"
+              alt="Road Safety Authority logo"
               unoptimized
               className={"min-h-[100px] min-w-[100px]"}
             ></Image>

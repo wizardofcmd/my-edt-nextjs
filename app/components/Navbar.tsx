@@ -32,17 +32,18 @@ export default function Navbar() {
 
   return (
     <header
-      className={`flex w-full bg-slate-900 ${
-        isBurgerMenuOpen ? "min-h-max flex-col" : "h-16"
+      className={`flex min-h-max w-full bg-slate-900 md:min-h-[auto] ${
+        isBurgerMenuOpen ? "flex-col" : ""
       }`}
     >
       {/* Navbar for bigger screens */}
       <div className="hidden w-full items-center px-4 sm:pl-8 md:flex md:pl-12 lg:pl-16">
-        <Link href="/dashboard" className="flex h-5/6 w-auto items-center">
+        <Link href="/dashboard" className="flex items-center p-2">
           <Image
-            className="h-full w-auto"
             src={RSALogo}
-            alt="RSA logo"
+            width={60}
+            height={60}
+            alt="Link to home page"
             unoptimized
           ></Image>
         </Link>
