@@ -32,8 +32,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`flex min-h-max w-full  bg-slate-900 ${
-        isBurgerMenuOpen ? "flex-col" : ""
+      className={`flex w-full bg-slate-900 ${
+        isBurgerMenuOpen ? "min-h-max flex-col" : "h-16"
       }`}
     >
       {/* Navbar for bigger screens */}
