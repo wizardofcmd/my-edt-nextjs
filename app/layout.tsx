@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={interTight.className}>{children}</body>
+        <body className={`${interTight.className} sm:bg-slate-400`}>
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
