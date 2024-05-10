@@ -15,10 +15,7 @@ export default function Navbar() {
   const NavbarLinks = () => (
     <>
       <div className="flex flex-col gap-4 pl-3 md:ml-16 md:flex-row md:items-center md:gap-16">
-        <Link
-          href="/dashboard"
-          className="text-2xl font-medium text-white md:text-lg"
-        >
+        <Link href="#" className="text-2xl font-medium text-white md:text-lg">
           My Lessons
         </Link>
         <Link href="#" className="text-2xl font-medium text-white md:text-lg">
@@ -55,7 +52,7 @@ export default function Navbar() {
     >
       {/* Navbar for bigger screens */}
       <div className="hidden w-full items-center px-4 sm:pl-8 md:flex md:pl-12 lg:pl-16">
-        <Link href="/dashboard" className="flex items-center p-2">
+        <Link href="/" className="flex items-center p-2">
           <Image
             src={RSALogo}
             width={60}

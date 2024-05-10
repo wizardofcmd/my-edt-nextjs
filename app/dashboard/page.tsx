@@ -8,7 +8,7 @@ export default function Dashboard() {
 
   if (isSignedIn) {
     return (
-      <h1 className="text-4xl font-bold text-white">
+      <h1 className="font-bold text-white md:text-4xl">
         {`Welcome, ${user.fullName}.`}
       </h1>
     );
