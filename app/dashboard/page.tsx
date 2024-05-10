@@ -1,5 +1,6 @@
 "use client";
 
+import LatestLessons from "@/components/Dashboard/LatestLessons";
 import { useUser } from "@clerk/nextjs";
 import React from "react";
 
@@ -8,9 +9,12 @@ export default function Dashboard() {
 
   if (isSignedIn) {
     return (
-      <h1 className="font-bold text-white md:text-4xl">
-        {`Welcome, ${user.fullName}.`}
-      </h1>
+      <>
+        <h1 className="font-bold text-white md:text-4xl">
+          {`Welcome, ${user.fullName}.`}
+        </h1>
+        <LatestLessons />
+      </>
     );
   }
 

@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { useUser } from "@clerk/clerk-react";
-import LoginRegisterModal from "./components/Home/LoginRegisterModal";
+import LoginRegisterModal from "@/components/Home/LoginRegisterModal";
 
 export default function Home() {
   const { isSignedIn, isLoaded } = useUser();
