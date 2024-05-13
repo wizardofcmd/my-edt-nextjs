@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import RSALogo from "/public/rsa-logo.png";
+import RSALogo from "@/public/rsa-logo.png";
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";

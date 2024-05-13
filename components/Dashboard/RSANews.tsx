@@ -7,12 +7,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export default function LatestLessons() {
+export default function RSANews() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Latest Lessons</CardTitle>
-        <CardDescription>{`Latest lessons for [Type of License]`}</CardDescription>
+        <CardTitle>News & Events</CardTitle>
       </CardHeader>
       <CardContent>
         <p>Card Content</p>
