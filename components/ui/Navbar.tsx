@@ -36,6 +36,8 @@ export default function Navbar() {
             variables: {
               // To make this fit with the other 1.5rem nav links
               fontSize: "1.7144rem",
+              // bg-slate-800 to match <main>
+              colorBackground: "rgb(30 41 59)",
             },
             baseTheme: dark,
           }}
@@ -52,7 +54,7 @@ export default function Navbar() {
       }`}
     >
       {/* Navbar for bigger screens */}
-      <div className="hidden w-full items-center px-4 sm:pl-8 md:flex md:pl-12 lg:pl-16">
+      <nav className="hidden w-full items-center px-4 sm:pl-8 md:flex md:pl-12 lg:pl-16">
         <Link href="/" className="flex items-center p-2">
           <Image
             src={RSALogo}
@@ -63,7 +65,7 @@ export default function Navbar() {
           ></Image>
         </Link>
         <NavbarLinks />
-      </div>
+      </nav>
 
       {/* Mobile menu icon */}
       <div
@@ -74,9 +76,9 @@ export default function Navbar() {
       </div>
 
       {isBurgerMenuOpen && (
-        <div className="flex flex-col">
+        <nav className="flex flex-col">
           <NavbarLinks />
-        </div>
+        </nav>
       )}
     </header>
   );
