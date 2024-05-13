@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Card,
   CardContent,
@@ -7,9 +8,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export default function LatestLessons() {
+interface LatestLessonsProps {
+  className: string;
+}
+
+export default function LatestLessons({ className }: LatestLessonsProps) {
   return (
-    <Card>
+    <Card className={className}>
       <CardHeader>
         <CardTitle>Latest Lessons</CardTitle>
         <CardDescription>{`Latest lessons for [Type of License]`}</CardDescription>
