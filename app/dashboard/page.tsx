@@ -15,13 +15,15 @@ export default function Dashboard() {
         <h1 className="font-bold text-white md:text-4xl">
           {`Welcome, ${user.fullName}.`}
         </h1>
-        <div className="flex">
-          <div className="w-1/2">
+        <div className="flex flex-col sm:flex-row">
+          <div className="w-3/5">
             <LatestLessons />
           </div>
-          <div className="w-1/4">
+          <div className="w-2/5">
             <RSANews />
-            <PersonalCalendar />
+            <div className="min-w-max">
+              <PersonalCalendar />
+            </div>
           </div>
         </div>
       </div>

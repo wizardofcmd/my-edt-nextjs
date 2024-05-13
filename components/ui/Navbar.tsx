@@ -34,7 +34,8 @@ export default function Navbar() {
               },
             },
             variables: {
-              fontSize: "1.5rem",
+              // To make this fit with the other 1.5rem nav links
+              fontSize: "1.7144rem",
             },
             baseTheme: dark,
           }}

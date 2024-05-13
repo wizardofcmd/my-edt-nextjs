@@ -9,4 +9,5 @@ export default function Home() {
 
   if (isSignedIn) redirect("/dashboard");
   if (isLoaded) return <LoginRegisterModal />;
+  return null;
 }
