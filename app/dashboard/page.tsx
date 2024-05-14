@@ -12,7 +12,7 @@ export default function Dashboard() {
   if (isSignedIn) {
     return (
       <div className="flex h-full w-full flex-col">
-        <h1 className="hidden flex-1 font-bold text-white md:flex md:pb-2 md:text-4xl lg:flex-initial">
+        <h1 className="hidden font-bold text-white md:flex md:pb-2 md:text-4xl lg:flex-initial">
           {`Welcome, ${user.fullName}.`}
         </h1>
         <div className="flex flex-1 flex-col gap-4 md:w-full lg:flex-row">
