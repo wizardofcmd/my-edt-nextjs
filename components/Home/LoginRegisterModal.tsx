@@ -21,7 +21,7 @@ export default function LoginRegisterModal() {
             </h1>
           </div>
           <div className="flex h-full w-full flex-col gap-6 lg:flex-row lg:justify-center">
-            <SignInButton redirectUrl="/dashboard">
+            <SignInButton forceRedirectUrl="/dashboard">
               <button
                 type="button"
                 className="flex h-1/5 w-full min-w-[100px] max-w-[450px] items-center justify-center self-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-6 text-xl font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2  focus-visible:outline-indigo-600 sm:h-2/3 sm:text-2xl lg:self-auto lg:text-3xl"
@@ -29,7 +29,7 @@ export default function LoginRegisterModal() {
                 Login
               </button>
             </SignInButton>
-            <SignUpButton redirectUrl="/dashboard">
+            <SignUpButton forceRedirectUrl="/dashboard">
               <button
                 type="button"
                 className="flex h-1/5 w-full min-w-[100px] max-w-[450px] items-center justify-center self-center whitespace-nowrap rounded-md bg-indigo-600 px-3 py-6 text-xl font-semibold leading-6 text-white  shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:h-2/3 sm:text-2xl lg:self-auto lg:text-3xl"
