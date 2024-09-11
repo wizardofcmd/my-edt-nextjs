@@ -1,6 +1,7 @@
 import { drizzle } from "drizzle-orm/vercel-postgres";
 import { sql } from "@vercel/postgres";
 import {
+  integer,
   pgTable,
   serial,
   text,
@@ -26,3 +27,9 @@ export const users = pgTable(
     };
   }
 );
+
+export const licenses = pgTable("licenses", {
+  id: serial("id").primaryKey(),
+  user_id: integer("user_id").references(() => users.id),
+  type: text("type").notNull(),
+});
