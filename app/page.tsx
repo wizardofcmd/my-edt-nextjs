@@ -8,6 +8,6 @@ export default function Home() {
   const { isSignedIn, isLoaded } = useUser();
 
   if (isSignedIn) redirect("/dashboard");
-  if (isLoaded) return <LoginRegisterModal />;
+  if (!isSignedIn) return <LoginRegisterModal />;
   return null;
 }
