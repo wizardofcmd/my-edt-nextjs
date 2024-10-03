@@ -5,7 +5,7 @@ import * as schema from "./schema";
 export const db = drizzle(sql, { schema });
 
 export const getUsers = async () => {
-  const results = db.query.users.findMany();
+  const results = await db.query.users.findMany();
 
   return results;
 };
